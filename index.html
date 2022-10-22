@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.css">
+</head>
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="Images/logo.png" width=30px></a>
+        <div class="navbar" id="navLinks"> 
+            <i class="fa fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">Store</a></li>
+                <li><a href="">Mac</a></li>
+                <li><a href="">iPad</a></li>
+                <li><a href="">iPhone</a></li>
+                <li><a href="">Watch</a></li>
+                <li><a href="">Others</a></li>
+                <li><a href="">Newsroom</a></li> <!--Newsroom = blog-->
+                <li><a href="">Upload Article</a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<div class="text-box">
+    <h1>Apple: The Future</h1>
+    <p>The future is on your hands, and we are here to let you explore yours.
+        <br>
+        Be more wonderful and powerful with Apple. 
+    </p>
+    <a href=""class="blog-iphone-14">Meet iPhone 14</a>
+</div>
+
+</section>
+
+<!-- products -->
+<section class="products">
+    <h1>What's New</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    
+    <div class="row">
+        <div class="products-cat">
+            <h3>iPhone 14 Pro Max</h3>
+            <img src="Images/product-iphone.png" width=100px>
+            <p>A new future with A16 Bionic.</p>
+        </div>
+        <div class="products-cat">
+            <br>
+            <h3>Macbook Air M2</h3>
+            <img src="Images/product-macbook.png" width=200px>
+            <p>Lighter and faster than ever.</p>
+        </div>
+        <div class="products-cat">
+            <h3>iPad Pro M2</h3>
+            <p><img src="Images/product-ipadd.png" width=150px>
+            <br>Loveable. Drawable. Magical.</p>
+        </div>
+    </div>
+</section>
+
+<section class="apple-blogs">
+    <h1>Our Blogs</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+</section>
+<!-- JS -->
+<script>
+    let navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

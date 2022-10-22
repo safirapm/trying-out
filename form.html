@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.css">
+</head>
+  <style>
+    .container {
+        width: 50%;
+        margin-left: 15%;
+    }
+</style>
+  <h1>Publish Blog</h1>
+  <body>
+    <form method="get" action="mainpage.html" class="flex" enctype="multipart/form-data">
+        <label>Blog Title:</label>
+        <input type="text" placeholder="Write the title here" name="Title"></input><br>
+        <br/>
+        <label>Categories:</label>
+        <select name="type">
+            <option value="iPhone">iPhone</option>
+            <option value="Macbook">Macbook</option>
+            <option value="Others">Others</option>
+        </select><br/>
+        <br/>
+        <label>Select image to upload:</label>
+        <input type="file" name="filetoupload" id="filetoupload"><br/>
+        <br/>
+        <label>Description:</label>
+        <textarea name="Description"></textarea><br>
+        <br>
+        <button type="Submit">Post</button>
+        <button onclick="mainpage.html">Back</button></a>
+    </form>
+  </body>
+</html>
